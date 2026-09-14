@@ -302,3 +302,62 @@ main {
 .code .str { color: var(--lime); }
 .code .num { color: #ffb020; }
 .code .cm  { color: #75756a; }
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.timeline__item {
+  border: var(--line);
+  border-left: 10px solid var(--magenta);
+  background: var(--panel);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.timeline__item:nth-child(even) { border-left-color: var(--cyan); }
+.timeline__item:nth-child(3n)   { border-left-color: var(--violet); }
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.timeline__meta {
+  margin: .25rem 0 .75rem;
+  color: var(--dim);
+  font-size: .85em;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.timeline__item p:last-child {
+  margin-bottom: 0;
+}
+
+.bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: .5rem;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--dim);
+  font-size: .95em;
+}
+
+.bullets li::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  color: var(--magenta);
+  font-weight: 700;
+}
