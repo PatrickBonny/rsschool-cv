@@ -275,3 +275,30 @@ main {
 .tags li:nth-child(4n+1) { background: var(--lime); }
 .tags li:nth-child(4n+2) { background: var(--cyan); }
 .tags li:nth-child(4n+3) { background: var(--magenta); color: var(--panel); }
+
+.card__title {
+  margin: 0 0 .75rem;
+  font-size: 1.05em;
+  background: var(--lime);
+  display: inline-block;
+  padding: .1rem .4rem;
+}
+
+.code {
+  margin: 1.25rem 0 0;
+  padding: clamp(1rem, 2.8vw, 1.6rem);
+  border: var(--line);
+  border-left: 10px solid var(--lime);
+  background: #0e0e0a;
+  box-shadow: 8px 8px 0 var(--magenta);
+  color: #f2f2e6;
+  font-size: .9em;
+  line-height: 1.75;
+  overflow-x: auto;
+}
+
+.code .kw  { color: var(--magenta); font-weight: 700; }
+.code .fn  { color: var(--cyan); }
+.code .str { color: var(--lime); }
+.code .num { color: #ffb020; }
+.code .cm  { color: #75756a; }

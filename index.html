@@ -89,6 +89,28 @@
         <li>Fast&nbsp;learner</li>
       </ul>
     </section>
+        <section class="section" id="code">
+      <h2 class="section__title"><span aria-hidden="true">// </span>code example</h2>
+      <div class="card">
+        <h3 class="card__title">Codewars — "Sum of Digits / Digital Root" (6&nbsp;kyu)</h3>
+        <p>
+          Repeatedly sum the digits of a positive integer until a single digit is left.
+          For example, <code>942</code> → <code>9+4+2=15</code> → <code>1+5=6</code>.
+          A small piece of number theory — the part of my mathematics degree that turned
+          out to be the most fun in JavaScript.
+        </p>
+      </div>
+      <pre class="code"><code><span class="kw">const</span> <span class="fn">digitalRoot</span> = (n) =&gt; {
+        <span class="kw">while</span> (n &gt; <span class="num">9</span>) {
+            n = <span class="fn">String</span>(n)
+            .<span class="fn">split</span>(<span class="str">''</span>)
+            .<span class="fn">reduce</span>((sum, digit) =&gt; sum + <span class="fn">Number</span>(digit), <span class="num">0</span>);
+        }
+        <span class="kw">return</span> n;
+        };
+
+        console.<span class="fn">log</span>(<span class="fn">digitalRoot</span>(<span class="num">942</span>)); <span class="cm">// 6</span></code></pre>
+    </section>
   </main>
 </body>
 </html>
