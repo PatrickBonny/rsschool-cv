@@ -33,3 +33,80 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: inset 0 -.35em 0 var(--lime);
+  transition: box-shadow .15s, color .15s;
+}
+
+a:hover,
+a:focus-visible {
+  box-shadow: inset 0 -1.1em 0 var(--lime);
+}
+
+:focus-visible {
+  outline: 3px solid var(--violet);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: .5rem 1rem;
+  border: var(--line);
+  background: var(--lime);
+  box-shadow: none;
+}
+
+.site-header {
+  width: min(100% - 2.5rem, var(--maxw));
+  margin-inline: auto;
+  padding-block: 1.5rem 3rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  border: var(--line);
+  background: var(--panel);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.nav__brand {
+  padding: .1rem .5rem;
+  background: var(--ink);
+  color: var(--lime);
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list a {
+  font-weight: 500;
+}
+
+.nav__list a::before {
+  content: "#";
+  color: var(--magenta);
+  font-weight: 700;
+}
