@@ -115,3 +115,20 @@ console.log(digitalRoot(132189)); // 6
 - Worked on large-scale campaigns, including a women-in-business project with posters on
   Times Square.
 - Created visuals for social media, websites, presentations and print.
+
+---
+
+## Education
+
+- **Oles Honchar Dnipro National University — Master's degree**, 2016 — 2022
+  Applied Mathematics: computer modelling, computational methods and programming technologies.
+- **The Rolling Scopes School — JavaScript / Frontend**, 2026 — present
+  Free open-source course: HTML, CSS, JavaScript, Git.
+
+---
+
+## Languages
+
+- **Ukrainian** — Native
+- **Russian** — Native
+- **English** — B2, reading documentation freely
