@@ -1,3 +1,7 @@
+---
+title: CV
+---
+
 # Anastasiia Davidenko
 
 ## Frontend Developer
