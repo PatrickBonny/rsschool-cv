@@ -41,3 +41,27 @@ I love understanding how everything works — which is exactly what brought me f
 - Technical writing
 - Problem solving and critical thinking
 - Fast learner
+
+---
+
+## Code Example
+
+**Codewars — "Sum of Digits / Digital Root"**
+
+Repeatedly sum the digits of a positive integer until a single digit is left.
+For example, `942` → `9+4+2=15` → `1+5=6`.
+
+```javascript
+const digitalRoot = (n) => {
+  while (n > 9) {
+    n = String(n)
+      .split('')
+      .reduce((sum, digit) => sum + Number(digit), 0);
+  }
+  return n;
+};
+
+console.log(digitalRoot(16));     // 7
+console.log(digitalRoot(942));    // 6
+console.log(digitalRoot(132189)); // 6
+```
