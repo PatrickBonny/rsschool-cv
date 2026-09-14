@@ -201,3 +201,77 @@ a:focus-visible {
 .contacts__key::after {
   content: ":";
 }
+
+main {
+  width: min(100% - 2.5rem, var(--maxw));
+  margin-inline: auto;
+}
+
+.section {
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.section__title {
+  margin: 0 0 1.5rem;
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: -.02em;
+  border-bottom: var(--line);
+  padding-bottom: .4rem;
+}
+
+.section__title span {
+  color: var(--magenta);
+}
+
+.card {
+  border: var(--line);
+  box-shadow: 5px 5px 0 var(--cyan);
+  background: var(--panel);
+  padding: clamp(1rem, 3vw, 1.75rem);
+}
+
+.card p {
+  margin: 0 0 1rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.skills__sub {
+  margin: 0 0 .9rem;
+  font-size: .85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--dim);
+}
+
+.skills__sub + .tags {
+  margin-bottom: 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: .3rem .85rem;
+  border: var(--line);
+  background: var(--panel);
+  font-size: .9em;
+  font-weight: 700;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.tags li:nth-child(4n+1) { background: var(--lime); }
+.tags li:nth-child(4n+2) { background: var(--cyan); }
+.tags li:nth-child(4n+3) { background: var(--magenta); color: var(--panel); }
