@@ -1,0 +1,35 @@
+:root {
+  --paper:    #fdfdf4;
+  --panel:    #ffffff;
+  --ink:      #14140f;
+  --dim:      #5c5c52;
+  --lime:     #c9f231;
+  --magenta:  #ff3d9a;
+  --cyan:     #23d3fb;
+  --violet:   #7b5cff;
+  --line:     3px solid var(--ink);
+  --maxw:     1000px;
+  --mono:     "JetBrains Mono", Consolas, monospace;
+  --display:  "Space Grotesk", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(15px, 1.6vw, 17px);
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
